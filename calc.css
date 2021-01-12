@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.container{
+  border:2px solid rgb(2, 11, 51);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+  background-color: blue;
+}
+
+.calculator{
+flex: 0 0 95%;
+
+}
+
+.screen{
+width: 100%;
+font-size: 4rem;
+padding: 0.5rem;
+background: #324661;
+color: white;
+border: none;
+}
+
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  transition: all 0.5s linear;
+}
+
+button{
+  flex: 0 0 25%;
+  border: 1px solid black;
+  padding: 0.25rem 0;
+  transition: all 1s ease;
+  font-size: 20px;
+}
+
+button:hover{
+  background: rgb(32, 126, 163);
+}
+
+.btn-yellow{
+  background: rgb(32, 42, 100);
+  color: white;
+}
+
+.btn-grey{
+  background: grey;
+}
+
+.btn,.btn-equal,.btn-clear{
+  font-size: 4rem;
+}
+
+.btn-equal{
+  background: rgb(221, 223, 233);
+}
+
+.btn-clear{
+  background: rgb(39, 47, 155);
+}
+
+@media only screen and (max-width:600px){
+  .container{
+    width: auto;
+  }
+  .btn,.btn-equal,.btn-clear{
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width:600px){
+  .container{
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width:720px){
+  .container{
+    width: 60%;
+  }
+  .btn,.btn-equal,.btn-clear{
+    font-size: 4rem;
+  }
+}
+
+
+@media only screen and (min-width:992px){
+  .container{
+    width: 50%;
+  }
+  .btn,.btn-equal,.btn-clear{
+    font-size: 6rem;
+  }
+  .screen{
+    font-size: 7rem;
+  }
+}
+
+@media only screen and (min-width:1200px){
+  .container{
+    width: 50%;
+    height: 90vh;
+  }
+  .btn,.btn-equal,.btn-clear{
+    font-size: 4rem;
+  }
+  .screen{
+    font-size: 5rem;
+  }
+}
